@@ -10,6 +10,9 @@ public record EmpruntResponseDto(
         Date dateEmprunt,
         Date dateRetourPrevu,
         Date dateRetourEffectif,
-        String statut
+        String statut,
+        String studentName,
+        Integer idStudent
+
 ) {
 }

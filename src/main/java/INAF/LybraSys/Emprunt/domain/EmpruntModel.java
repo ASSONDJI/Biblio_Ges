@@ -39,7 +39,7 @@ public class EmpruntModel {
     private String statut;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")  // clé étrangère en DB
+    @JoinColumn(name = "student_id")
     private StudentModel student;
 
 

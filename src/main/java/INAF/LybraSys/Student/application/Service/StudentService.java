@@ -9,7 +9,7 @@ public interface StudentService {
 
     public StudentResponseDto createStudent(StudentRequestDto studentRequestDto);
 
-    public List<StudentResponseDto> getStudent(int id);
+    public List<StudentResponseDto> getStudent();
 
     public StudentResponseDto updateStudent(int id, StudentRequestDto studentRequestDto);
 

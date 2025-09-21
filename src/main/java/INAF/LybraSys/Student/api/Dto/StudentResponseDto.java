@@ -1,13 +1,14 @@
 package INAF.LybraSys.Student.api.Dto;
 
 public record StudentResponseDto(
-        Integer idStudent,
+        int idStudent,
         String name,
         String firstname,
         String email,
         String phoneNumber,
-        String faculty,
+        String major,
         String department,
-        String major
-) {
-}
+        String faculty,
+        Integer idUser,
+        String username
+) {}

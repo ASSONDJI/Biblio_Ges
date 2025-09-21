@@ -26,10 +26,11 @@ public class EmpruntController {
     }
 
     @GetMapping
-    public ResponseEntity<List<EmpruntResponseDto>> getAllEmprunt(int id){
+    public ResponseEntity<List<EmpruntResponseDto>> getAllEmprunt() {
         List<EmpruntResponseDto> emprunts = empruntService.getEmprunt();
         return ResponseEntity.ok(emprunts);
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<EmpruntResponseDto> updateEmprunt(@PathVariable int id, @RequestBody EmpruntRequestDto empruntRequestDto){

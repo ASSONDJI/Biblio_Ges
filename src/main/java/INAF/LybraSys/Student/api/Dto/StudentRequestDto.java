@@ -5,6 +5,8 @@ public record StudentRequestDto(
         String firstname,
         String email,
         String phoneNumber,
-        String faculty
-) {
-}
+        String major,
+        String department,
+        String faculty,
+        Integer idUser
+) {}
